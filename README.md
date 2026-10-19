@@ -1,26 +1,21 @@
-URBAN MARK CREATIVES — WEBSITE FILES
-=====================================
+# Urban Mark Creatives — Hybrid Premium Edition
 
-FILES
-- index.html: website structure and content
-- style.css: all page styling and the updated colour theme
-- script.js: menu, animations, portfolio filters, enquiry form and interactions
+## Files
+- `index.html` — site content and structure
+- `css/styles.css` — visual system, layout, responsive rules, animations
+- `js/script.js` — navigation, loader, scroll progress, service controls, enquiry interaction
 
-COLOUR DIRECTION
-- Deep forest green / ink backgrounds
-- Emerald and jade highlights
-- Restrained champagne-gold accents
-- Light warm text for readability
+## Run locally
+Open `index.html` in a browser. For best results, use a local static server or deploy the folder as a static site.
 
-HOW TO TEST LOCALLY
-1. Keep index.html, style.css and script.js in the same folder.
-2. Open index.html in a browser.
-3. Check the navigation, portfolio filters and enquiry form.
-4. Internet is required for externally hosted Unsplash images and any externally loaded fonts.
+## Deploy
+Upload the contents of this folder to your static hosting provider, or push the folder to GitHub and connect the repository to Cloudflare Pages.
 
-HOW TO DEPLOY
-Upload all three files to the same directory on your static hosting service.
-Make sure index.html is the default entry file. Do not upload only index.html; it links to style.css and script.js.
+## Brand palette
+- Forest Ink: `#071A17`
+- Emerald: `#39D6A0`
+- Jade: `#16A878`
+- Champagne: `#DCC9A3`
 
-CONTACT DETAILS
-The supplied contact information and embedded brand assets were retained from the source website.
+## Notes
+The enquiry form opens WhatsApp with the visitor's message; it does not submit to a separate backend. Background music depends on YouTube availability and browser autoplay permissions, so audio may require a visitor interaction.
