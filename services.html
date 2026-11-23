@@ -85,6 +85,7 @@ alt=""></noscript>
     </a>
     <nav class="nav-links" data-nav aria-label="Main navigation"></nav>
     <div class="nav-actions">
+      <a class="header-social-link" href="https://web.facebook.com/profile.php?id=61596840897472" target="_blank" rel="noopener" aria-label="Urban Mark Creatives on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
       <a class="btn" href="contact.html">Get a free quote <i class="fa-solid fa-arrow-right"></i></a>
       <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
@@ -122,6 +123,54 @@ alt=""></noscript>
       <p>Each service is delivered by the same team that designs your brand, so nothing gets lost between suppliers.</p>
     </div>
     <div class="svc-grid" data-services></div>
+  </div>
+</section>
+
+
+<!-- ============================ INSTANT PROJECT COST CALCULATOR ============================ -->
+<section class="sec sec-alt" id="instant-calculator">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Plan your budget</span>
+      <h2>Instant project cost calculator</h2>
+      <p>Choose a service and scope to get an indicative starting estimate. Add it to your enquiry when you are ready.</p>
+    </div>
+    <div class="project-calculator reveal" data-project-calculator>
+      <div class="calculator-fields">
+        <label class="field">
+          <span>Service type</span>
+          <select data-calculator-service>
+            <option value="website">Website</option>
+            <option value="app">Mobile App</option>
+            <option value="branding">Branding</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="automation">AI Automation</option>
+          </select>
+        </label>
+        <label class="field">
+          <span data-calculator-units-label>Number of pages</span>
+          <input type="number" data-calculator-units min="1" max="50" step="1" value="3" inputmode="numeric">
+        </label>
+        <div class="field calculator-currency-field">
+          <span>Currency</span>
+          <div class="calculator-currency" role="group" aria-label="Choose estimate currency">
+            <button type="button" data-calc-currency="KES" aria-pressed="true" class="active">KES</button>
+            <button type="button" data-calc-currency="USD" aria-pressed="false">USD</button>
+          </div>
+        </div>
+      </div>
+      <div class="calculator-result">
+        <div>
+          <span class="estimate-kicker" data-calculator-period>Estimated project total</span>
+          <output class="estimate-amount" data-calculator-estimate aria-live="polite">KES 25,000</output>
+          <p class="estimate-breakdown" data-calculator-breakdown>3 pages • first page included</p>
+        </div>
+        <button class="btn btn-full" type="button" data-calculator-submit>
+          Add estimate to quote enquiry <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <p class="calculator-disclaimer">Estimates are planning guides, not fixed quotes. USD values use an indicative conversion of KES 130 per US$1 and are not live exchange rates. Digital marketing estimates are monthly.</p>
   </div>
 </section>
 

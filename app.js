@@ -333,6 +333,16 @@
   /* ---- Hero ---- */
   Render.hero = function (d) {
     var h = d.hero || {};
+
+    /* Service choices are shared by the homepage and standalone enquiry forms. */
+    $$('[data-service-options]').forEach(function (sel) {
+      sel.innerHTML = '<option value="">Select a service</option>' +
+        (d.services || []).map(function (service) {
+          return '<option value="' + esc(service.title) + '">' + esc(service.title) + '</option>';
+        }).join("") +
+        '<option value="General enquiry">General enquiry</option>';
+    });
+
     var host = $("[data-hero]");
     if (!host) return;
 
@@ -378,14 +388,6 @@
     var ql = $("[data-quote-lead]", host);
     if (ql) ql.textContent = h.formLead || "";
 
-    /* Service options in the form */
-    $$("[data-service-options]").forEach(function (sel) {
-      sel.innerHTML = '<option value="">Select a service</option>' +
-        (d.services || []).map(function (s) {
-          return '<option value="' + esc(s.title) + '">' + esc(s.title) + "</option>";
-        }).join("") +
-        '<option value="General enquiry">General enquiry</option>';
-    });
   };
 
   /* ---- Stats ---- */
@@ -765,6 +767,23 @@
     }
   };
 
+  /* Prefill the contact form when the visitor brings an estimate from Services. */
+  function prefillLeadFormsFromQuery() {
+    var params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
+    var service = params.get("service");
+    var details = params.get("details");
+    if (!service && !details) return;
+    var form = $("form[data-lead-form]");
+    if (!form) return;
+    var serviceField = $('[name="service"]', form);
+    var detailsField = $('[name="details"]', form);
+    if (serviceField && service) serviceField.value = service;
+    if (detailsField && details) {
+      detailsField.value = [detailsField.value.trim(), details].filter(Boolean).join("\n\n");
+    }
+  }
+
   /* ---- Render everything present on this page ---- */
   function renderAll(d) {
     if (!d) return;
@@ -783,6 +802,7 @@
     Render.sectors(d);
     Render.contact(d);
     Render.legal(d);
+    prefillLeadFormsFromQuery();
 
     /* Re-run art hooks for freshly injected nodes */
     if (window.UMCArt) {
@@ -792,6 +812,119 @@
     }
   }
   UMC.renderAll = renderAll;
+
+  /* Instant Project Cost Calculator */
+  function initProjectCalculator() {
+    var widget = $("[data-project-calculator]");
+    if (!widget) return;
+
+    var rates = {
+      website: { title: "Website Design & Development", unit: "page", unitLabel: "Number of pages", base: 15000, step: 5000, first: "First page included" },
+      app: { title: "Mobile App Development", unit: "feature", unitLabel: "Number of app features", base: 100000, step: 12000, first: "Core app build included" },
+      branding: { title: "Graphic Design & Brand Identity", unit: "brand asset", unitLabel: "Number of brand assets", base: 1000, step: 2000, first: "Base identity setup included" },
+      marketing: { title: "Digital Marketing & SEO", unit: "marketing channel", unitLabel: "Number of marketing channels", base: 20000, step: 5000, first: "Monthly base management included", period: "per month" },
+      automation: { title: "AI Consultancy & Business Automation", unit: "workflow", unitLabel: "Number of automation workflows", base: 35000, step: 10000, first: "Initial workflow setup included" }
+    };
+    var kesPerUsd = 130;
+    var serviceField = $("[data-calculator-service]", widget);
+    var unitsField = $("[data-calculator-units]", widget);
+    var unitsLabel = $("[data-calculator-units-label]", widget);
+    var estimate = $("[data-calculator-estimate]", widget);
+    var breakdown = $("[data-calculator-breakdown]", widget);
+    var periodLabel = $("[data-calculator-period]", widget);
+    var currencyButtons = $$('[data-calc-currency]', widget);
+    var submit = $("[data-calculator-submit]", widget);
+    var currency = "KES";
+    var current = null;
+    var viewTracked = false;
+
+    function number(value) {
+      return new Intl.NumberFormat(currency === "KES" ? "en-KE" : "en-US", { maximumFractionDigits: 0 }).format(value);
+    }
+    function trackView() {
+      if (viewTracked) return;
+      viewTracked = true;
+      Tracking.event("ViewContent", { content_name: "Instant Project Cost Calculator", content_category: "Project estimate" });
+    }
+    function calculate() {
+      var config = rates[serviceField.value] || rates.website;
+      var quantity = Math.max(1, Math.min(50, parseInt(unitsField.value, 10) || 1));
+      unitsField.value = quantity;
+      var totalKes = config.base + ((quantity - 1) * config.step);
+      var displayed = currency === "KES" ? totalKes : totalKes / kesPerUsd;
+      var suffix = config.period ? " / month" : "";
+      var perLabel = config.unit + (quantity === 1 ? "" : "s");
+      if (unitsLabel) unitsLabel.textContent = config.unitLabel;
+      if (estimate) estimate.textContent = (currency === "KES" ? "KES " : "USD ") + number(displayed) + suffix;
+      if (breakdown) breakdown.textContent = quantity + " " + perLabel + " • " + config.first + (config.period ? " • monthly retainer" : "");
+      if (periodLabel) periodLabel.textContent = config.period ? "Estimated monthly budget" : "Estimated project total";
+      current = { config: config, quantity: quantity, totalKes: totalKes, displayed: displayed, currency: currency };
+      return current;
+    }
+
+    if (!serviceField || !unitsField || !estimate || !submit) return;
+    serviceField.addEventListener("change", calculate);
+    unitsField.addEventListener("input", calculate);
+    currencyButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        currency = button.getAttribute("data-calc-currency") === "USD" ? "USD" : "KES";
+        currencyButtons.forEach(function (item) {
+          var active = item === button;
+          item.classList.toggle("active", active);
+          item.setAttribute("aria-pressed", String(active));
+        });
+        calculate();
+      });
+    });
+
+    submit.addEventListener("click", function () {
+      var result = calculate();
+      trackView();
+      var config = result.config;
+      var estimateText = (result.currency === "KES" ? "KES " : "USD ") + number(result.displayed) + (config.period ? " per month" : "");
+      var quoteDetails = "Instant calculator estimate: " + estimateText + " for " + result.quantity + " " + config.unit + ". The estimate is indicative and subject to a confirmed brief.";
+      var form = $("form[data-lead-form]");
+      if (form) {
+        var formService = $('[name="service"]', form);
+        var detailsField = $('[name="details"]', form);
+        if (formService) {
+          var hasServiceOption = Array.prototype.some.call(formService.options || [], function (option) {
+            return option.value === config.title;
+          });
+          if (!hasServiceOption) {
+            var serviceOption = document.createElement("option");
+            serviceOption.value = config.title;
+            serviceOption.textContent = config.title;
+            formService.appendChild(serviceOption);
+          }
+          formService.value = config.title;
+        }
+        if (detailsField) detailsField.value = [detailsField.value.trim(), quoteDetails].filter(Boolean).join("\n\n");
+        form.scrollIntoView({ behavior: "smooth", block: "center" });
+        if (detailsField) window.setTimeout(function () { detailsField.focus({ preventScroll: true }); }, 450);
+        return;
+      }
+      var target = "contact.html?service=" + encodeURIComponent(config.title) +
+        "&details=" + encodeURIComponent(quoteDetails);
+      window.location.href = target;
+    });
+
+    calculate();
+    if ("IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.25) {
+            trackView();
+            observer.disconnect();
+          }
+        });
+      }, { threshold: [0.25, 0.5] });
+      observer.observe(widget);
+    } else {
+      widget.addEventListener("focusin", trackView, { once: true });
+      widget.addEventListener("pointerdown", trackView, { once: true });
+    }
+  }
 
   /* ========================================================================
      5. UI WIRING
@@ -998,6 +1131,8 @@
       var a = e.target.closest('a[href^="tel:"], a[href*="wa.me"], a[href^="mailto:"]');
       if (a) Tracking.event("Contact", { method: a.getAttribute("href").split(":")[0] });
     });
+
+    initProjectCalculator();
   }
 
   /* ---- Case study modal ---- */
@@ -1430,16 +1565,25 @@
     inp: function (path, label, value, type) {
       var id = "f_" + path.replace(/\./g, "_");
       var v = value == null ? "" : value;
+      var helper = "";
+      if (/^hero\.image$/.test(path)) helper = "Recommended: 1920×1080px (16:9) WebP, max 800KB";
+      else if (/^services\.\d+\.image$/.test(path)) helper = "Recommended: 1200×750px (8:5) WebP, max 500KB";
+      else if (/^portfolio\.\d+\.image$/.test(path)) helper = "Recommended: 1200×800px (3:2) WebP, max 500KB";
+      else if (/^team\.\d+\.image$/.test(path)) helper = "Recommended: 800×800px (1:1) WebP/PNG, max 500KB";
+      else if (path === "site.logo") helper = "Recommended: 1000×680px transparent PNG or SVG, max 300KB";
+      else if (path === "seo.ogImage") helper = "Recommended: 1200×630px (1.91:1) WebP/JPG, max 500KB";
+      else if (path === "seo.favicon") helper = "Recommended: 512×512px (1:1) PNG, max 100KB";
+      var helperHtml = helper ? '<small class="admin-field-help">' + esc(helper) + '</small>' : '';
       if (type === "textarea") {
         return '<label class="field field-full"><span>' + esc(label) + "</span>" +
-          '<textarea id="' + id + '" data-path="' + esc(path) + '" rows="3">' + esc(v) + "</textarea></label>";
+          '<textarea id="' + id + '" data-path="' + esc(path) + '" rows="3">' + esc(v) + "</textarea>" + helperHtml + "</label>";
       }
       if (type === "color") {
         return '<label class="field"><span>' + esc(label) + "</span>" +
           '<input type="color" id="' + id + '" data-path="' + esc(path) + '" value="' + esc(v || "#000000") + '"></label>';
       }
       return '<label class="field"><span>' + esc(label) + "</span>" +
-        '<input type="' + (type || "text") + '" id="' + id + '" data-path="' + esc(path) + '" value="' + esc(v) + '"></label>';
+        '<input type="' + (type || "text") + '" id="' + id + '" data-path="' + esc(path) + '" value="' + esc(v) + '">' + helperHtml + '</label>';
     },
 
     wireTab: function () {

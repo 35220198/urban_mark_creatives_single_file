@@ -26,11 +26,26 @@
     "twitterHandle": "@urbanmarkcreatives"
   },
   "nav": [
-    { "label": "Home", "href": "index.html" },
-    { "label": "About", "href": "about.html" },
-    { "label": "Services", "href": "services.html" },
-    { "label": "Portfolio", "href": "portfolio.html" },
-    { "label": "Contact", "href": "contact.html" }
+    {
+      "label": "Home",
+      "href": "index.html"
+    },
+    {
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "label": "Services",
+      "href": "services.html"
+    },
+    {
+      "label": "Portfolio",
+      "href": "portfolio.html"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html"
+    }
   ],
   "hero": {
     "eyebrow": "Kiambu, Kenya — Serving Global Clients",
@@ -44,10 +59,22 @@
     "image": "images/hero.webp"
   },
   "stats": [
-    { "value": "100+", "label": "Projects delivered" },
-    { "value": "5+", "label": "Years operating" },
-    { "value": "12", "label": "Countries served" },
-    { "value": "98%", "label": "Client retention" }
+    {
+      "value": "100+",
+      "label": "Projects delivered"
+    },
+    {
+      "value": "5+",
+      "label": "Years operating"
+    },
+    {
+      "value": "12",
+      "label": "Countries served"
+    },
+    {
+      "value": "98%",
+      "label": "Client retention"
+    }
   ],
   "services": [
     {
@@ -56,7 +83,12 @@
       "price": "From KES 15,000",
       "image": "images/svc-web.webp",
       "icon": "fa-solid fa-code",
-      "features": ["Custom design", "Mobile-first build", "SEO ready", "CMS or static"]
+      "features": [
+        "Custom design",
+        "Mobile-first build",
+        "SEO ready",
+        "CMS or static"
+      ]
     },
     {
       "title": "Mobile App Development",
@@ -64,7 +96,12 @@
       "price": "From KES 100,000",
       "image": "images/svc-app.webp",
       "icon": "fa-solid fa-mobile-screen-button",
-      "features": ["iOS & Android", "API integration", "Push notifications", "Store submission"]
+      "features": [
+        "iOS & Android",
+        "API integration",
+        "Push notifications",
+        "Store submission"
+      ]
     },
     {
       "title": "Graphic Design & Brand Identity",
@@ -72,7 +109,12 @@
       "price": "From KES 1,000",
       "image": "images/svc-brand.webp",
       "icon": "fa-solid fa-pen-nib",
-      "features": ["Logo systems", "Brand guidelines", "Social kits", "Print collateral"]
+      "features": [
+        "Logo systems",
+        "Brand guidelines",
+        "Social kits",
+        "Print collateral"
+      ]
     },
     {
       "title": "Digital Marketing & SEO",
@@ -80,7 +122,12 @@
       "price": "From KES 20,000 / mo",
       "image": "images/svc-marketing.webp",
       "icon": "fa-solid fa-chart-line",
-      "features": ["Technical SEO", "Content strategy", "Paid social", "Monthly reporting"]
+      "features": [
+        "Technical SEO",
+        "Content strategy",
+        "Paid social",
+        "Monthly reporting"
+      ]
     },
     {
       "title": "Website Maintenance & Hosting",
@@ -88,7 +135,12 @@
       "price": "From KES 1,000 / yr",
       "image": "images/svc-hosting.webp",
       "icon": "fa-solid fa-server",
-      "features": ["Managed hosting", "SSL & backups", "Business email", "Priority support"]
+      "features": [
+        "Managed hosting",
+        "SSL & backups",
+        "Business email",
+        "Priority support"
+      ]
     },
     {
       "title": "AI Consultancy & Business Automation",
@@ -96,7 +148,12 @@
       "price": "From KES 35,000",
       "image": "images/svc-ai.webp",
       "icon": "fa-solid fa-robot",
-      "features": ["Workflow audit", "Custom chatbots", "API automation", "Team training"]
+      "features": [
+        "Workflow audit",
+        "Custom chatbots",
+        "API automation",
+        "Team training"
+      ]
     }
   ],
   "portfolio": [
@@ -108,7 +165,11 @@
       "link": "https://behance.net",
       "image": "images/mock-macbook.webp",
       "mockup": "macbook",
-      "tags": ["Web Design", "Development", "SEO"]
+      "tags": [
+        "Web Design",
+        "Development",
+        "SEO"
+      ]
     },
     {
       "title": "Atlas Freight Global",
@@ -116,9 +177,13 @@
       "client": "Logistics company",
       "desc": "Corporate website with a quotation request workflow, multi-language support and a shipment tracking portal.",
       "link": "https://behance.net",
-      "image": "images/mock-macbook.webp",
+      "image": "images/mock-logistics.webp",
       "mockup": "macbook",
-      "tags": ["Web Design", "Development", "Portal"]
+      "tags": [
+        "Web Design",
+        "Development",
+        "Portal"
+      ]
     },
     {
       "title": "Kilele Estates",
@@ -128,7 +193,11 @@
       "link": "",
       "image": "images/mock-logo.webp",
       "mockup": "logo",
-      "tags": ["Logo", "Identity", "Signage"]
+      "tags": [
+        "Logo",
+        "Identity",
+        "Signage"
+      ]
     },
     {
       "title": "Zawadi Roast",
@@ -138,7 +207,11 @@
       "link": "",
       "image": "images/mock-packaging.webp",
       "mockup": "packaging",
-      "tags": ["Branding", "Packaging", "Print"]
+      "tags": [
+        "Branding",
+        "Packaging",
+        "Print"
+      ]
     },
     {
       "title": "Sauti Media",
@@ -148,7 +221,11 @@
       "link": "",
       "image": "images/mock-stationery.webp",
       "mockup": "stationery",
-      "tags": ["Stationery", "Print", "Identity"]
+      "tags": [
+        "Stationery",
+        "Print",
+        "Identity"
+      ]
     },
     {
       "title": "Nairobi Tech Expo",
@@ -158,7 +235,11 @@
       "link": "",
       "image": "images/mock-poster.webp",
       "mockup": "poster",
-      "tags": ["Poster", "Campaign", "Print"]
+      "tags": [
+        "Poster",
+        "Campaign",
+        "Print"
+      ]
     },
     {
       "title": "Nuru Glow Spa",
@@ -166,9 +247,13 @@
       "client": "Luxury salon & spa",
       "desc": "A gold-on-marble identity with a backlit reception sign, booking app screens and retail packaging.",
       "link": "",
-      "image": "images/mock-stationery.webp",
+      "image": "images/svc-marketing.webp",
       "mockup": "stationery",
-      "tags": ["Branding", "Interior", "App"]
+      "tags": [
+        "Branding",
+        "Interior",
+        "App"
+      ]
     },
     {
       "title": "Kasi Kicks",
@@ -178,7 +263,11 @@
       "link": "https://behance.net",
       "image": "images/mock-iphone.webp",
       "mockup": "iphone",
-      "tags": ["E-commerce", "Mobile", "M-Pesa"]
+      "tags": [
+        "E-commerce",
+        "Mobile",
+        "M-Pesa"
+      ]
     },
     {
       "title": "Baraka Freight",
@@ -186,15 +275,28 @@
       "client": "Logistics brand",
       "desc": "A bold navy-and-orange mark applied across fleet livery, uniforms and warehouse signage.",
       "link": "",
-      "image": "images/mock-logo.webp",
+      "image": "images/svc-brand.webp",
       "mockup": "logo",
-      "tags": ["Logo", "Livery", "Signage"]
+      "tags": [
+        "Logo",
+        "Livery",
+        "Signage"
+      ]
     }
   ],
   "process": [
-    { "title": "Discovery and strategy", "text": "We learn your goals, audience and what you need delivered, then agree the scope in writing." },
-    { "title": "Design and build", "text": "Wireframes, designs and code are produced and reviewed with you step by step, with no surprises." },
-    { "title": "Test and launch", "text": "We check every device size, launch, and stay available for support after go-live." }
+    {
+      "title": "Discovery and strategy",
+      "text": "We learn your goals, audience and what you need delivered, then agree the scope in writing."
+    },
+    {
+      "title": "Design and build",
+      "text": "Wireframes, designs and code are produced and reviewed with you step by step, with no surprises."
+    },
+    {
+      "title": "Test and launch",
+      "text": "We check every device size, launch, and stay available for support after go-live."
+    }
   ],
   "team": [
     {
@@ -202,14 +304,20 @@
       "role": "Co-founder, Managing Director & Head of Design",
       "image": "images/team-joseph.webp",
       "bio": "Leads design direction and creative strategy across every brand, website and print project the studio delivers.",
-      "socials": { "linkedin": "#", "behance": "https://www.behance.net/simonndichu" }
+      "socials": {
+        "linkedin": "#",
+        "behance": "https://www.behance.net/simonndichu"
+      }
     },
     {
       "name": "Simon Steve Ndichu",
       "role": "Co-founder & Executive Director",
       "image": "images/team-simon.webp",
       "bio": "Runs client partnerships, delivery operations and the technical build process from brief to launch.",
-      "socials": { "linkedin": "#", "github": "https://github.com" }
+      "socials": {
+        "linkedin": "#",
+        "github": "https://github.com/35220198"
+      }
     }
   ],
   "about": {
@@ -218,10 +326,22 @@
     "text2": "Having branding, development and print under one roof means fewer hand-offs, faster delivery and a consistent result. We work remotely with clients across Kenya, Africa, Europe and North America.",
     "image": "images/studio.webp",
     "values": [
-      { "title": "One studio, one standard", "text": "Brand, web and print produced by the same team, so nothing gets lost between suppliers." },
-      { "title": "Clear scope, clear price", "text": "You get a written scope and a fixed quote before work starts. No surprise invoices." },
-      { "title": "Built to be found", "text": "Every site ships with clean semantic markup, schema, sitemaps and real performance budgets." },
-      { "title": "Support that answers", "text": "Direct access to the people who built your project, not a ticket queue." }
+      {
+        "title": "One studio, one standard",
+        "text": "Brand, web and print produced by the same team, so nothing gets lost between suppliers."
+      },
+      {
+        "title": "Clear scope, clear price",
+        "text": "You get a written scope and a fixed quote before work starts. No surprise invoices."
+      },
+      {
+        "title": "Built to be found",
+        "text": "Every site ships with clean semantic markup, schema, sitemaps and real performance budgets."
+      },
+      {
+        "title": "Support that answers",
+        "text": "Direct access to the people who built your project, not a ticket queue."
+      }
     ]
   },
   "testimonials": [
@@ -255,26 +375,94 @@
     }
   ],
   "faq": [
-    { "q": "Why choose Urban Mark Creatives?", "a": "We offer branding, web development and print production in one place, so your brand and website stay consistent without juggling several suppliers. You deal with the founders directly." },
-    { "q": "How much does a website cost?", "a": "Landing pages start from KES 15,000, business websites from KES 25,000 and e-commerce stores from KES 45,000. We send a clear written quote after a short call." },
-    { "q": "How long does a project take?", "a": "Landing pages take 1 to 2 weeks. Larger websites and stores usually take 3 to 6 weeks depending on scope, content readiness and feedback speed." },
-    { "q": "Do you accept M-Pesa?", "a": "Yes. We accept M-Pesa, bank transfer and card payments, with a deposit to start and the balance on delivery." },
-    { "q": "Do you work with clients outside Kenya?", "a": "Yes. Most of our work is remote. We work across East Africa, Europe and North America, and we schedule calls in your timezone." },
-    { "q": "Who owns the finished work?", "a": "You do. Once the final payment is received, you own the final approved deliverables and all source files." }
+    {
+      "q": "Why choose Urban Mark Creatives?",
+      "a": "We offer branding, web development and print production in one place, so your brand and website stay consistent without juggling several suppliers. You deal with the founders directly."
+    },
+    {
+      "q": "How much does a website cost?",
+      "a": "Landing pages start from KES 15,000, business websites from KES 25,000 and e-commerce stores from KES 45,000. We send a clear written quote after a short call."
+    },
+    {
+      "q": "How long does a project take?",
+      "a": "Landing pages take 1 to 2 weeks. Larger websites and stores usually take 3 to 6 weeks depending on scope, content readiness and feedback speed."
+    },
+    {
+      "q": "Do you accept M-Pesa?",
+      "a": "Yes. We accept M-Pesa, bank transfer and card payments, with a deposit to start and the balance on delivery."
+    },
+    {
+      "q": "Do you work with clients outside Kenya?",
+      "a": "Yes. Most of our work is remote. We work across East Africa, Europe and North America, and we schedule calls in your timezone."
+    },
+    {
+      "q": "Who owns the finished work?",
+      "a": "You do. Once the final payment is received, you own the final approved deliverables and all source files."
+    }
   ],
   "pricing": [
-    { "name": "Website design", "price": "From KES 15,000", "desc": "Landing pages from KES 15,000 and business websites from KES 25,000.", "link": "contact.html" },
-    { "name": "Logo and brand identity", "price": "From KES 9,500", "desc": "Logo concepts, brand files and a business card and letterhead.", "link": "contact.html" },
-    { "name": "Company profile", "price": "From KES 5,000", "desc": "Tender-ready and investor-ready profile design.", "link": "contact.html" },
-    { "name": "Hosting and email", "price": "From KES 14,000 / year", "desc": "Managed hosting, SSL, backups and business email.", "link": "contact.html" }
+    {
+      "name": "Website design",
+      "price": "From KES 15,000",
+      "desc": "Landing pages from KES 15,000 and business websites from KES 25,000.",
+      "link": "contact.html"
+    },
+    {
+      "name": "Logo and brand identity",
+      "price": "From KES 9,500",
+      "desc": "Logo concepts, brand files and a business card and letterhead.",
+      "link": "contact.html"
+    },
+    {
+      "name": "Company profile",
+      "price": "From KES 5,000",
+      "desc": "Tender-ready and investor-ready profile design.",
+      "link": "contact.html"
+    },
+    {
+      "name": "Hosting and email",
+      "price": "From KES 14,000 / year",
+      "desc": "Managed hosting, SSL, backups and business email.",
+      "link": "contact.html"
+    }
   ],
   "sectors": [
-    { "title": "Businesses and startups", "desc": "Websites that win leads, sales and trust.", "link_label": "See our portfolio", "link": "portfolio.html" },
-    { "title": "NGOs and nonprofits", "desc": "Donor journeys, programme pages and clear impact stories.", "link_label": "Talk to us", "link": "contact.html" },
-    { "title": "Churches and ministries", "desc": "Events, sermons, giving and community updates.", "link_label": "Talk to us", "link": "contact.html" },
-    { "title": "Schools and colleges", "desc": "Admissions, fee information and parent communication.", "link_label": "Talk to us", "link": "contact.html" },
-    { "title": "Healthcare providers", "desc": "Patient confidence, services and easy appointment requests.", "link_label": "Talk to us", "link": "contact.html" },
-    { "title": "Professionals and firms", "desc": "Authority, reputation and simple client intake.", "link_label": "Talk to us", "link": "contact.html" }
+    {
+      "title": "Businesses and startups",
+      "desc": "Websites that win leads, sales and trust.",
+      "link_label": "See our portfolio",
+      "link": "portfolio.html"
+    },
+    {
+      "title": "NGOs and nonprofits",
+      "desc": "Donor journeys, programme pages and clear impact stories.",
+      "link_label": "Talk to us",
+      "link": "contact.html"
+    },
+    {
+      "title": "Churches and ministries",
+      "desc": "Events, sermons, giving and community updates.",
+      "link_label": "Talk to us",
+      "link": "contact.html"
+    },
+    {
+      "title": "Schools and colleges",
+      "desc": "Admissions, fee information and parent communication.",
+      "link_label": "Talk to us",
+      "link": "contact.html"
+    },
+    {
+      "title": "Healthcare providers",
+      "desc": "Patient confidence, services and easy appointment requests.",
+      "link_label": "Talk to us",
+      "link": "contact.html"
+    },
+    {
+      "title": "Professionals and firms",
+      "desc": "Authority, reputation and simple client intake.",
+      "link_label": "Talk to us",
+      "link": "contact.html"
+    }
   ],
   "contact": {
     "phone": "+254 106 027 162",
@@ -285,11 +473,31 @@
     "hours": "Mon–Fri, 8:00–18:00 EAT"
   },
   "socials": [
-    { "label": "Facebook", "icon": "fa-brands fa-facebook-f", "url": "https://web.facebook.com/profile.php?id=61577590637628" },
-    { "label": "Behance", "icon": "fa-brands fa-behance", "url": "https://www.behance.net/simonndichu" },
-    { "label": "Blog", "icon": "fa-solid fa-blog", "url": "https://urbanmarkcreatives.blogspot.com/" },
-    { "label": "GitHub", "icon": "fa-brands fa-github", "url": "https://github.com" },
-    { "label": "WhatsApp", "icon": "fa-brands fa-whatsapp", "url": "https://wa.me/254746128860" }
+    {
+      "label": "Facebook",
+      "icon": "fa-brands fa-facebook-f",
+      "url": "https://web.facebook.com/profile.php?id=61596840897472"
+    },
+    {
+      "label": "Behance",
+      "icon": "fa-brands fa-behance",
+      "url": "https://www.behance.net/simonndichu"
+    },
+    {
+      "label": "Blog",
+      "icon": "fa-solid fa-blog",
+      "url": "https://urbanmarkcreatives.blogspot.com/"
+    },
+    {
+      "label": "GitHub",
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com"
+    },
+    {
+      "label": "WhatsApp",
+      "icon": "fa-brands fa-whatsapp",
+      "url": "https://wa.me/254746128860"
+    }
   ],
   "footer": {
     "about": "Web design, branding, graphic design and digital marketing for businesses that want clear work and measurable results.",

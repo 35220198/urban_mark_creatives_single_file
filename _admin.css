@@ -466,3 +466,39 @@ html[data-theme="dark"] .admin-note code { background: rgba(255, 255, 255, 0.1);
   .admin-main { padding: 1.8rem 2rem; }
   .admin-top h1 { font-size: 1.45rem; }
 }
+
+
+/* --------------------------------------------------------------------------
+   A4. FINAL LOGIN PRESENTATION OVERRIDES
+   -------------------------------------------------------------------------- */
+.admin-gate {
+  background: linear-gradient(135deg, #070F1D 0%, #0F213E 50%, #162E52 100%);
+}
+.admin-gate::before,
+.admin-gate::after {
+  display: none;
+}
+.login-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+.login-logo {
+  display: block;
+  width: min(170px, 70%);
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+.admin-field-help {
+  display: block;
+  margin-top: 0.42rem;
+  color: #8A94A6;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.45;
+  text-transform: none;
+  letter-spacing: 0;
+}

@@ -114,7 +114,7 @@ alt=""></noscript>
     }
   ],
   "sameAs": [
-    "https://web.facebook.com/profile.php?id=61577590637628",
+    "https://web.facebook.com/profile.php?id=61596840897472",
     "https://www.behance.net/simonndichu",
     "https://urbanmarkcreatives.blogspot.com/"
   ],
@@ -166,6 +166,7 @@ alt=""></noscript>
     <nav class="nav-links" data-nav aria-label="Main navigation"></nav>
 
     <div class="nav-actions">
+      <a class="header-social-link" href="https://web.facebook.com/profile.php?id=61596840897472" target="_blank" rel="noopener" aria-label="Urban Mark Creatives on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
       <a class="btn" href="contact.html">Get a free quote <i class="fa-solid fa-arrow-right"></i></a>
       <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
@@ -173,6 +174,31 @@ alt=""></noscript>
     </div>
   </div>
 </header>
+
+
+<!-- ============================ SERVICE LOGO MARQUEE ============================ -->
+<section class="brand-marquee" aria-label="Urban Mark Creatives services">
+  <div class="marquee-viewport">
+    <div class="marquee-track">
+      <div class="marquee-group">
+        <img src="images/logo-full.png" alt="Urban Mark Creatives" width="350" height="100">
+        <span>Website Development</span><b aria-hidden="true">✦</b>
+        <span>Mobile Apps</span><b aria-hidden="true">✦</b>
+        <span>Branding &amp; Identity</span><b aria-hidden="true">✦</b>
+        <span>Digital Marketing</span><b aria-hidden="true">✦</b>
+        <span>AI Automation</span><b aria-hidden="true">✦</b>
+      </div>
+      <div class="marquee-group" aria-hidden="true">
+        <img src="images/logo-full.png" alt="" width="350" height="100">
+        <span>Website Development</span><b>✦</b>
+        <span>Mobile Apps</span><b>✦</b>
+        <span>Branding &amp; Identity</span><b>✦</b>
+        <span>Digital Marketing</span><b>✦</b>
+        <span>AI Automation</span><b>✦</b>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="menu-backdrop" id="menuBackdrop"></div>
 <aside class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
@@ -250,6 +276,54 @@ alt=""></noscript>
     <p class="center" style="margin-top:2.4rem">
       <a class="btn btn-outline" href="services.html">See all services in detail <i class="fa-solid fa-arrow-right"></i></a>
     </p>
+  </div>
+</section>
+
+
+<!-- ============================ INSTANT PROJECT COST CALCULATOR ============================ -->
+<section class="sec sec-alt" id="instant-calculator">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow">Plan your budget</span>
+      <h2>Instant project cost calculator</h2>
+      <p>Choose a service and scope to get an indicative starting estimate. Add it to your enquiry when you are ready.</p>
+    </div>
+    <div class="project-calculator reveal" data-project-calculator>
+      <div class="calculator-fields">
+        <label class="field">
+          <span>Service type</span>
+          <select data-calculator-service>
+            <option value="website">Website</option>
+            <option value="app">Mobile App</option>
+            <option value="branding">Branding</option>
+            <option value="marketing">Digital Marketing</option>
+            <option value="automation">AI Automation</option>
+          </select>
+        </label>
+        <label class="field">
+          <span data-calculator-units-label>Number of pages</span>
+          <input type="number" data-calculator-units min="1" max="50" step="1" value="3" inputmode="numeric">
+        </label>
+        <div class="field calculator-currency-field">
+          <span>Currency</span>
+          <div class="calculator-currency" role="group" aria-label="Choose estimate currency">
+            <button type="button" data-calc-currency="KES" aria-pressed="true" class="active">KES</button>
+            <button type="button" data-calc-currency="USD" aria-pressed="false">USD</button>
+          </div>
+        </div>
+      </div>
+      <div class="calculator-result">
+        <div>
+          <span class="estimate-kicker" data-calculator-period>Estimated project total</span>
+          <output class="estimate-amount" data-calculator-estimate aria-live="polite">KES 25,000</output>
+          <p class="estimate-breakdown" data-calculator-breakdown>3 pages • first page included</p>
+        </div>
+        <button class="btn btn-full" type="button" data-calculator-submit>
+          Add estimate to quote enquiry <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+    <p class="calculator-disclaimer">Estimates are planning guides, not fixed quotes. USD values use an indicative conversion of KES 130 per US$1 and are not live exchange rates. Digital marketing estimates are monthly.</p>
   </div>
 </section>
 
