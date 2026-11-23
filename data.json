@@ -1,0 +1,312 @@
+{
+  "site": {
+    "brand": "Urban Mark Creatives",
+    "tagline": "Your Ideas. Our Creativity. Your Growth!",
+    "logo": "images/logo.png",
+    "logoFull": "images/logo-full.png",
+    "theme": "light",
+    "primary": "#e8661a",
+    "navy": "#0a1d44",
+    "teal": "#1fb5b0",
+    "url": "https://urbanmarkcreatives.com",
+    "founded": "2021"
+  },
+  "tracking": {
+    "metaPixelId": "965331479743168",
+    "googleTagId": "",
+    "tiktokPixelId": "",
+    "linkedinPartnerId": ""
+  },
+  "seo": {
+    "title": "Website Design Company Kenya | Graphics & Web Development | Urban Mark Creatives",
+    "description": "Urban Mark Creatives builds websites, mobile apps, brand identities, graphic design and digital marketing for businesses in Kenya and worldwide. Kiambu-based, globally remote.",
+    "keywords": "web design Kenya, graphic design, logo design, branding, mobile apps, SEO, Kiambu, Nairobi web developer",
+    "ogImage": "images/hero.webp",
+    "favicon": "images/favicon.png",
+    "twitterHandle": "@urbanmarkcreatives"
+  },
+  "nav": [
+    { "label": "Home", "href": "index.html" },
+    { "label": "About", "href": "about.html" },
+    { "label": "Services", "href": "services.html" },
+    { "label": "Portfolio", "href": "portfolio.html" },
+    { "label": "Contact", "href": "contact.html" }
+  ],
+  "hero": {
+    "eyebrow": "Kiambu, Kenya — Serving Global Clients",
+    "title": "Websites, brands and print that help your business stand out.",
+    "lead": "Urban Mark Creatives is a Kiambu-based studio that designs and builds websites, apps, logos and printed material for businesses, NGOs, churches, schools and clinics. We work remotely, so you can hire us from anywhere.",
+    "cta": "View our work",
+    "ctaHref": "portfolio.html",
+    "formTitle": "Get a free quote",
+    "formLead": "Tell us what you need and we will reply with clear scope, timeline and pricing.",
+    "words": "websites, logos and brands, mobile apps, print and merchandise, AI automation",
+    "image": "images/hero.webp"
+  },
+  "stats": [
+    { "value": "100+", "label": "Projects delivered" },
+    { "value": "5+", "label": "Years operating" },
+    { "value": "12", "label": "Countries served" },
+    { "value": "98%", "label": "Client retention" }
+  ],
+  "services": [
+    {
+      "title": "Website Design & Development",
+      "desc": "Custom websites, e-commerce stores, and high-converting landing pages built for speed, search and sales.",
+      "price": "From KES 15,000",
+      "image": "images/svc-web.webp",
+      "icon": "fa-solid fa-code",
+      "features": ["Custom design", "Mobile-first build", "SEO ready", "CMS or static"]
+    },
+    {
+      "title": "Mobile App Development",
+      "desc": "Powerful, user-friendly applications for iOS and Android, from MVP to production release.",
+      "price": "From KES 100,000",
+      "image": "images/svc-app.webp",
+      "icon": "fa-solid fa-mobile-screen-button",
+      "features": ["iOS & Android", "API integration", "Push notifications", "Store submission"]
+    },
+    {
+      "title": "Graphic Design & Brand Identity",
+      "desc": "Logos, brand guidelines, social media graphics, and print design that hold together across every touchpoint.",
+      "price": "From KES 1,000",
+      "image": "images/svc-brand.webp",
+      "icon": "fa-solid fa-pen-nib",
+      "features": ["Logo systems", "Brand guidelines", "Social kits", "Print collateral"]
+    },
+    {
+      "title": "Digital Marketing & SEO",
+      "desc": "Search optimization, social media management, content creation, and paid ads that bring measurable leads.",
+      "price": "From KES 20,000 / mo",
+      "image": "images/svc-marketing.webp",
+      "icon": "fa-solid fa-chart-line",
+      "features": ["Technical SEO", "Content strategy", "Paid social", "Monthly reporting"]
+    },
+    {
+      "title": "Website Maintenance & Hosting",
+      "desc": "Security updates, backups, domain and business email setup, and ongoing support so nothing breaks.",
+      "price": "From KES 1,000 / yr",
+      "image": "images/svc-hosting.webp",
+      "icon": "fa-solid fa-server",
+      "features": ["Managed hosting", "SSL & backups", "Business email", "Priority support"]
+    },
+    {
+      "title": "AI Consultancy & Business Automation",
+      "desc": "Practical AI advice, custom workflows, chatbots and smart automation that save your team time and cut repetitive work.",
+      "price": "From KES 35,000",
+      "image": "images/svc-ai.webp",
+      "icon": "fa-solid fa-robot",
+      "features": ["Workflow audit", "Custom chatbots", "API automation", "Team training"]
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Meridian Travel",
+      "category": "Websites",
+      "client": "Travel platform",
+      "desc": "Booking-ready travel website with WhatsApp enquiries, a live availability calendar and a 2.1s load time on mobile.",
+      "link": "https://behance.net",
+      "image": "images/mock-macbook.webp",
+      "mockup": "macbook",
+      "tags": ["Web Design", "Development", "SEO"]
+    },
+    {
+      "title": "Atlas Freight Global",
+      "category": "Websites",
+      "client": "Logistics company",
+      "desc": "Corporate website with a quotation request workflow, multi-language support and a shipment tracking portal.",
+      "link": "https://behance.net",
+      "image": "images/mock-macbook.webp",
+      "mockup": "macbook",
+      "tags": ["Web Design", "Development", "Portal"]
+    },
+    {
+      "title": "Kilele Estates",
+      "category": "Logos",
+      "client": "Property developer",
+      "desc": "A geometric peak mark and wordmark built for signage, embroidery and digital use at any size.",
+      "link": "",
+      "image": "images/mock-logo.webp",
+      "mockup": "logo",
+      "tags": ["Logo", "Identity", "Signage"]
+    },
+    {
+      "title": "Zawadi Roast",
+      "category": "Branding",
+      "client": "Specialty coffee roaster",
+      "desc": "Packaging, cups, menu cards and signage in one coherent warm-brown identity that reads on shelf.",
+      "link": "",
+      "image": "images/mock-packaging.webp",
+      "mockup": "packaging",
+      "tags": ["Branding", "Packaging", "Print"]
+    },
+    {
+      "title": "Sauti Media",
+      "category": "Cards",
+      "client": "Media production house",
+      "desc": "Double-sided premium business cards with spot-gold detailing and a matching letterhead system.",
+      "link": "",
+      "image": "images/mock-stationery.webp",
+      "mockup": "stationery",
+      "tags": ["Stationery", "Print", "Identity"]
+    },
+    {
+      "title": "Nairobi Tech Expo",
+      "category": "Fliers",
+      "client": "Conference marketing",
+      "desc": "Poster and social media campaign for a 3,000-attendee technology expo, delivered in 9 formats.",
+      "link": "",
+      "image": "images/mock-poster.webp",
+      "mockup": "poster",
+      "tags": ["Poster", "Campaign", "Print"]
+    },
+    {
+      "title": "Nuru Glow Spa",
+      "category": "Branding",
+      "client": "Luxury salon & spa",
+      "desc": "A gold-on-marble identity with a backlit reception sign, booking app screens and retail packaging.",
+      "link": "",
+      "image": "images/mock-stationery.webp",
+      "mockup": "stationery",
+      "tags": ["Branding", "Interior", "App"]
+    },
+    {
+      "title": "Kasi Kicks",
+      "category": "Websites",
+      "client": "Sneaker boutique",
+      "desc": "Mobile-first e-commerce store with size filtering, M-Pesa checkout and an Instagram shop feed.",
+      "link": "https://behance.net",
+      "image": "images/mock-iphone.webp",
+      "mockup": "iphone",
+      "tags": ["E-commerce", "Mobile", "M-Pesa"]
+    },
+    {
+      "title": "Baraka Freight",
+      "category": "Logos",
+      "client": "Logistics brand",
+      "desc": "A bold navy-and-orange mark applied across fleet livery, uniforms and warehouse signage.",
+      "link": "",
+      "image": "images/mock-logo.webp",
+      "mockup": "logo",
+      "tags": ["Logo", "Livery", "Signage"]
+    }
+  ],
+  "process": [
+    { "title": "Discovery and strategy", "text": "We learn your goals, audience and what you need delivered, then agree the scope in writing." },
+    { "title": "Design and build", "text": "Wireframes, designs and code are produced and reviewed with you step by step, with no surprises." },
+    { "title": "Test and launch", "text": "We check every device size, launch, and stay available for support after go-live." }
+  ],
+  "team": [
+    {
+      "name": "Joseph Kamau",
+      "role": "Co-founder, Managing Director & Head of Design",
+      "image": "images/team-joseph.webp",
+      "bio": "Leads design direction and creative strategy across every brand, website and print project the studio delivers.",
+      "socials": { "linkedin": "#", "behance": "https://www.behance.net/simonndichu" }
+    },
+    {
+      "name": "Simon Steve Ndichu",
+      "role": "Co-founder & Executive Director",
+      "image": "images/team-simon.webp",
+      "bio": "Runs client partnerships, delivery operations and the technical build process from brief to launch.",
+      "socials": { "linkedin": "#", "github": "https://github.com" }
+    }
+  ],
+  "about": {
+    "title": "About Urban Mark Creatives",
+    "text1": "Urban Mark Creatives is a Kenyan design and software studio. We connect creative ideas with reliable technology so companies get a brand, a website and printed materials that look and work as one.",
+    "text2": "Having branding, development and print under one roof means fewer hand-offs, faster delivery and a consistent result. We work remotely with clients across Kenya, Africa, Europe and North America.",
+    "image": "images/studio.webp",
+    "values": [
+      { "title": "One studio, one standard", "text": "Brand, web and print produced by the same team, so nothing gets lost between suppliers." },
+      { "title": "Clear scope, clear price", "text": "You get a written scope and a fixed quote before work starts. No surprise invoices." },
+      { "title": "Built to be found", "text": "Every site ships with clean semantic markup, schema, sitemaps and real performance budgets." },
+      { "title": "Support that answers", "text": "Direct access to the people who built your project, not a ticket queue." }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Grace Wanjiru",
+      "role": "Operations Manager, Meridian Travel",
+      "quote": "Our new booking site cut enquiry handling time in half. The team understood our workflow before writing a single line of code, and the handover documentation was genuinely useful.",
+      "photo": "",
+      "rating": 5
+    },
+    {
+      "name": "David Otieno",
+      "role": "Director, Atlas Freight Global",
+      "quote": "We had quotes from three agencies. Urban Mark was the only one that asked about our customers first. The portal they built now handles most of our quotation requests automatically.",
+      "photo": "",
+      "rating": 5
+    },
+    {
+      "name": "Amina Hassan",
+      "role": "Founder, Zawadi Roast",
+      "quote": "The packaging redesign got us into two new supermarkets within a quarter. They handled print production end to end, including the press checks I could not attend.",
+      "photo": "",
+      "rating": 5
+    },
+    {
+      "name": "Peter Mwangi",
+      "role": "Communications Lead, Sample NGO",
+      "quote": "Donor reporting used to take our team a week. The dashboard they built pulls everything together in an afternoon, and it still looks like our brand.",
+      "photo": "",
+      "rating": 5
+    }
+  ],
+  "faq": [
+    { "q": "Why choose Urban Mark Creatives?", "a": "We offer branding, web development and print production in one place, so your brand and website stay consistent without juggling several suppliers. You deal with the founders directly." },
+    { "q": "How much does a website cost?", "a": "Landing pages start from KES 15,000, business websites from KES 25,000 and e-commerce stores from KES 45,000. We send a clear written quote after a short call." },
+    { "q": "How long does a project take?", "a": "Landing pages take 1 to 2 weeks. Larger websites and stores usually take 3 to 6 weeks depending on scope, content readiness and feedback speed." },
+    { "q": "Do you accept M-Pesa?", "a": "Yes. We accept M-Pesa, bank transfer and card payments, with a deposit to start and the balance on delivery." },
+    { "q": "Do you work with clients outside Kenya?", "a": "Yes. Most of our work is remote. We work across East Africa, Europe and North America, and we schedule calls in your timezone." },
+    { "q": "Who owns the finished work?", "a": "You do. Once the final payment is received, you own the final approved deliverables and all source files." }
+  ],
+  "pricing": [
+    { "name": "Website design", "price": "From KES 15,000", "desc": "Landing pages from KES 15,000 and business websites from KES 25,000.", "link": "contact.html" },
+    { "name": "Logo and brand identity", "price": "From KES 9,500", "desc": "Logo concepts, brand files and a business card and letterhead.", "link": "contact.html" },
+    { "name": "Company profile", "price": "From KES 5,000", "desc": "Tender-ready and investor-ready profile design.", "link": "contact.html" },
+    { "name": "Hosting and email", "price": "From KES 14,000 / year", "desc": "Managed hosting, SSL, backups and business email.", "link": "contact.html" }
+  ],
+  "sectors": [
+    { "title": "Businesses and startups", "desc": "Websites that win leads, sales and trust.", "link_label": "See our portfolio", "link": "portfolio.html" },
+    { "title": "NGOs and nonprofits", "desc": "Donor journeys, programme pages and clear impact stories.", "link_label": "Talk to us", "link": "contact.html" },
+    { "title": "Churches and ministries", "desc": "Events, sermons, giving and community updates.", "link_label": "Talk to us", "link": "contact.html" },
+    { "title": "Schools and colleges", "desc": "Admissions, fee information and parent communication.", "link_label": "Talk to us", "link": "contact.html" },
+    { "title": "Healthcare providers", "desc": "Patient confidence, services and easy appointment requests.", "link_label": "Talk to us", "link": "contact.html" },
+    { "title": "Professionals and firms", "desc": "Authority, reputation and simple client intake.", "link_label": "Talk to us", "link": "contact.html" }
+  ],
+  "contact": {
+    "phone": "+254 106 027 162",
+    "whatsapp": "+254 746 128 860",
+    "wa_message": "Hello Urban Mark Creatives, I would like to discuss a project.",
+    "email": "URBANMARKCREATIVES@gmail.com",
+    "location": "Kiambu Town, Kenya — Global Remote",
+    "hours": "Mon–Fri, 8:00–18:00 EAT"
+  },
+  "socials": [
+    { "label": "Facebook", "icon": "fa-brands fa-facebook-f", "url": "https://web.facebook.com/profile.php?id=61577590637628" },
+    { "label": "Behance", "icon": "fa-brands fa-behance", "url": "https://www.behance.net/simonndichu" },
+    { "label": "Blog", "icon": "fa-solid fa-blog", "url": "https://urbanmarkcreatives.blogspot.com/" },
+    { "label": "GitHub", "icon": "fa-brands fa-github", "url": "https://github.com" },
+    { "label": "WhatsApp", "icon": "fa-brands fa-whatsapp", "url": "https://wa.me/254746128860" }
+  ],
+  "footer": {
+    "about": "Web design, branding, graphic design and digital marketing for businesses that want clear work and measurable results.",
+    "copyright": "© 2026 Urban Mark Creatives. All rights reserved.",
+    "credit_show": 1,
+    "credit_text": "Designed & Developed by Urban Mark Creatives"
+  },
+  "pages": [
+    {
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "body": "This is a starting template. Please have it reviewed for your business before relying on it.\n\nWhat we collect: the details you send through our contact form (name, phone, email, service and message).\n\nHow we use it: only to reply to your enquiry and to provide the services you request. We do not sell your information.\n\nStorage: enquiries are sent to our team by email and kept only as long as we need them.\n\nYour rights: you may ask us to see, correct or delete your information at any time by emailing us.\n\nCookies: this site uses essential local storage to remember your theme and cookie choice, and analytics pixels only where you have consented."
+    },
+    {
+      "slug": "terms-of-service",
+      "title": "Terms of Service",
+      "body": "This is a starting template. Please have it reviewed for your business before relying on it.\n\nServices: project scope, timelines and prices are agreed in writing before work starts.\n\nPayments: a deposit is required to begin work, with the balance due on delivery unless agreed otherwise.\n\nOwnership: once the final payment is received, you own the final approved deliverables.\n\nLiability: we are not liable for indirect losses arising from the use of delivered work.\n\nContact: questions about these terms can be sent to our email address."
+    }
+  ]
+}

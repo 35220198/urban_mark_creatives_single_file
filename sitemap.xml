@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://urbanmarkcreatives.com/images/hero.webp</image:loc>
+      <image:title>Urban Mark Creatives — websites, brands and print</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/services.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://urbanmarkcreatives.com/images/svc-web.webp</image:loc>
+      <image:title>Website design and development service</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/portfolio.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://urbanmarkcreatives.com/images/mock-macbook.webp</image:loc>
+      <image:title>Portfolio case study — website project</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/about.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://urbanmarkcreatives.com/images/studio.webp</image:loc>
+      <image:title>Inside the Urban Mark Creatives studio</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/contact.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/privacy-policy.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://urbanmarkcreatives.com/terms-of-service.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

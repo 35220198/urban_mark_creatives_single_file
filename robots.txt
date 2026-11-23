@@ -1,0 +1,19 @@
+# robots.txt — Urban Mark Creatives
+# https://urbanmarkcreatives.com
+
+User-agent: *
+Allow: /
+
+# The admin dashboard is a private content editor — never index it.
+Disallow: /admin.html
+Disallow: /admin
+
+# Nothing to crawl in these
+Disallow: /*.json$
+Disallow: /_build_pages.py
+
+# Crawl-delay is honoured by some engines; keep it polite.
+Crawl-delay: 1
+
+# ---- Sitemap ----
+Sitemap: https://urbanmarkcreatives.com/sitemap.xml
