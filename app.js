@@ -819,7 +819,7 @@
     if (!widget) return;
 
     var rates = {
-      website: { title: "Website Design & Development", unit: "page", unitLabel: "Number of pages", base: 15000, step: 5000, first: "First page included" },
+      website: { title: "Website Design & Development", unit: "page", unitLabel: "Number of pages", base: 15000, step: 2000, first: "First page included" },
       app: { title: "Mobile App Development", unit: "feature", unitLabel: "Number of app features", base: 100000, step: 12000, first: "Core app build included" },
       branding: { title: "Graphic Design & Brand Identity", unit: "brand asset", unitLabel: "Number of brand assets", base: 1000, step: 2000, first: "Base identity setup included" },
       marketing: { title: "Digital Marketing & SEO", unit: "marketing channel", unitLabel: "Number of marketing channels", base: 20000, step: 5000, first: "Monthly base management included", period: "per month" },
